@@ -781,7 +781,12 @@ class network {
                     return false;
                 } */
             }
-            on_epoch_enumerate();
+            /*
+             * Hack to stop after overfitting.
+             */
+            if ( false == on_epoch_enumerate()){
+                return false;
+            }
         }
         set_netphase(net_phase::test);
         return true;
