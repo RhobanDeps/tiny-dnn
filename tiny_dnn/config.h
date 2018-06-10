@@ -76,6 +76,11 @@
 #define CNN_TASK_SIZE 8
 #endif
 
+/**
+ * Remove multi_thraeding
+ */
+#define CNN_SINGLE_THREAD 1
+
 #if !defined(_MSC_VER) && !defined(_WIN32) && !defined(WIN32)
 #define CNN_USE_GEMMLOWP // gemmlowp doesn't support MSVC/mingw
 #endif
