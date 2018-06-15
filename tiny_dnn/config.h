@@ -79,7 +79,7 @@
 /**
  * Remove multi_thraeding
  */
-#define CNN_SINGLE_THREAD 1
+#define CNN_SINGLE_THREAD
 
 #if !defined(_MSC_VER) && !defined(_WIN32) && !defined(WIN32)
 #define CNN_USE_GEMMLOWP // gemmlowp doesn't support MSVC/mingw
