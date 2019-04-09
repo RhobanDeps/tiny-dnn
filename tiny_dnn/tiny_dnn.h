@@ -26,6 +26,9 @@
 */
 #pragma once
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmisleading-indentation"
+
 #include "tiny_dnn/config.h"
 #include "tiny_dnn/network.h"
 #include "tiny_dnn/nodes.h"
@@ -140,3 +143,5 @@ using slice = tiny_dnn::slice_layer;
 using power = tiny_dnn::power_layer;
 
 }
+
+#pragma GCC diagnostic pop
